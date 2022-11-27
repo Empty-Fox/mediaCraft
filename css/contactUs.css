@@ -299,6 +299,9 @@
   .contactUs_main_block_position {
     top: 190px;
   }
+  .for_quesions_block_form {
+    overflow: hidden;
+  }
 }
 
 @media (max-width:280px) {
