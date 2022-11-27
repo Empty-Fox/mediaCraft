@@ -835,9 +835,11 @@ footer {
     transition: .3s;
     left: -100%;
     top: 88px;
-    height: 100vh;
-    display: block;
+    height: calc(100vh - 80px);;
+    display: flex;
     padding-top: 80px;
+    overflow: auto;
+    flex-direction: column;
   }
 
   .header__links.active {
@@ -858,7 +860,6 @@ footer {
   .header_container .btn_container {
     margin-right: 10%;
     margin-top: 0;
-    order: 2;
   }
 
   .header_container {
@@ -916,10 +917,11 @@ footer {
 
   .mob_contact_header {
     display: block;
-    position: absolute;
+    /* position: absolute;
     bottom: 15%;
-    left: 5%;
+    left: 5%; */
     max-width: 90%;
+    padding-left: 5%;
   }
 
   .mob_contact_header p {
@@ -1115,10 +1117,6 @@ li.header__link, .header__link:first-child {
     font-size: 32px;
     line-height: 34px;
     padding: 12px 5%;
-  }
-
-  .header__links {
-    padding-top: 40px;
   }
 
   .mob_contact_header {
