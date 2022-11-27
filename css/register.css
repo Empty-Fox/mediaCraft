@@ -1,0 +1,387 @@
+.tab {
+  display: none;
+  width: 100%;
+  height: 50%;
+  margin: 0px auto;
+}
+
+.current {
+  display: block;
+}
+
+#register_form {
+  margin: 180px auto 100px auto;
+  max-width: 630px;
+  min-width: 250px;
+  width: 90%;
+}
+
+#register_form h1 {
+  text-shadow: 2px 4px 0px rgba(251, 37, 118, 0.5);
+  color: #F8F8F8;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: 'Chakra Petch', sans-serif;
+  text-align: center;
+}
+
+#register_form button {
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  padding: 12px 10px 12px 16px;
+  border: 1px solid #8A5DB0;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: #F8F8F8;
+}
+
+select {
+  padding: 12px 10px 12px 16px;
+  border: 1px solid #8A5DB0;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: #98919E;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #98919E;
+}
+
+select option {
+  background-color: #1C0C29;
+}
+
+.step {
+  border: 2px solid #FB2576;
+  height: 40px;
+  padding: 8px 24px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.step::after {
+  border-right: 2px solid #FB2576;
+  width: 40px;
+  height: 19px;
+  content: '';
+  position: absolute;
+  transform: rotate(136deg);
+  right: -30px;
+  top: -18px;
+  background: #1C0C29;
+}
+
+.step.active {
+  background-color: #FB2576;
+}
+
+.step.active::after {
+  border: none;
+  top: -19px;
+}
+
+label.error {
+  color: #f00;
+  font-size: 14px;
+}
+
+.step p {
+  color: #812F4E;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.step.active p {
+  color: #F8F8F8;
+}
+
+.btn_previous {
+  background: url(../images/btn_empty.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 11px 40px;
+  text-decoration: none;
+  height: auto;
+  color: #F8F8F8;
+  width: 214px;
+  letter-spacing: 0.4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: -11px;
+}
+
+.btn_previous:hover {
+  background: url(../images/btn_fill.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+  height: auto;
+  width: 214px;
+  color: #F8F8F8;
+}
+
+fieldset #list-error {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+.step_block {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.main_register_block {
+  position: relative;
+  overflow: hidden;
+}
+
+.cbx {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.cbx:not(:last-child) {
+  margin-right: 6px;
+}
+
+.cbx span {
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  transform: scale(1);
+  border: 1px solid #FB2576;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 1px rgba(0, 16, 75, 0.05);
+}
+
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #FB2576;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.cbx span:last-child {
+  padding-left: 12px;
+  line-height: 16px;
+  font-size: 18px;
+  color: #F8F8F8;
+}
+
+.cbx:hover span:first-child {
+  border-color: #FB2576;
+}
+
+.inp-cbx {
+  position: absolute;
+  visibility: hidden;
+}
+
+.inp-cbx:checked+.cbx span:first-child {
+  background: transparent;
+  border-color: #FB2576;
+  animation: wave 0.4s ease;
+}
+
+.inp-cbx:checked+.cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.inline-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  position: relative;
+  padding: 0;
+}
+
+fieldset>div {
+  margin-bottom: 16px;
+}
+
+fieldset label.error {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.boxes_agree label.error {
+  display: block;
+}
+
+.group_title {
+  color: #FB2576;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+.paddingTop30 {
+  padding-top: 30px;
+}
+
+.boxes_agree_text {
+  letter-spacing: 0.6px;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  text-transform: uppercase;
+}
+
+.steps_btns_block {
+  float: right;
+  margin-top: 35px;
+}
+
+@-moz-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@-o-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width:650px) {
+  .step {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .cbx {
+    width: 100%;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+}
+
+@media (max-width:550px) {
+  .step {
+    width: 120px;
+  }
+}
+
+@media (max-width:450px) {
+  .step {
+    border: none;
+    border-bottom: 5px solid #812F4E;
+    padding: 0;
+    max-width: 100px;
+    color: #812F4E;
+  }
+
+  .step.active {
+    border: none;
+    border-bottom: 5px solid #FB2576;
+    padding: 0;
+    max-width: 100px;
+    background-color: transparent;
+  }
+
+  .step::after,
+  .step.active::after {
+    border: none;
+  }
+
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+
+  .other_order {
+    order: 9;
+  }
+
+  .steps_btns_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width:320px) {
+  .cbx {
+    display: flex;
+  }
+}

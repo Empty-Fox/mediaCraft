@@ -1,0 +1,314 @@
+.bg_contact_main_block {
+  background-image: url(../images/contactUs_main.jpg);
+  min-height: 676px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactUs_main_block_position {
+  position: absolute;
+  top: 288px;
+  width: 100%;
+  left: 0;
+  padding-left: 10%;
+}
+
+.contactUs_main_block_text .btn_container {
+  max-width: 375px;
+  margin-left: -22px;
+  margin-top: 40px;
+}
+
+.contactUs_bg_slide_border_up {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.contactUs_bg_slide_border_up img {
+  max-width: 320px;
+}
+
+.contactUs_slider_img {
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+}
+
+.contactUs_slider_img img {
+  border: 2px solid transparent;
+  width: 100%;
+}
+
+.contactUs_slider_img img:hover {
+  border: 2px solid #FB2576;
+  box-sizing: border-box;
+}
+
+.contactUs_slider_img::after {
+  width: 80px;
+  height: 30px;
+  content: '';
+  position: absolute;
+  transform: rotate(137deg);
+  left: -20px;
+  top: -20px;
+  background: #1C0C29;
+  border-top: 2px solid transparent;
+}
+
+.contactUs_slider_img:hover::after {
+  border-top: 2px solid #FB2576;
+}
+
+.contactUs_meet_date {
+  color: #FB2576;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0;
+  max-width: 320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactUs_meet_title {
+  color: #F8F8F8;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  line-height: 28px;
+  max-width: 320px;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meetOurTeem {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.meetOurTeem h2 {
+  text-shadow: 2px 4px 0px rgba(251, 37, 118, 0.5);
+  color: #F8F8F8;
+  text-align: center;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  font-family: 'Chakra Petch', sans-serif;
+  text-shadow: 2px 4px 0px rgb(251 37 118 / 50%);
+  color: #F8F8F8;
+  text-align: left;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  font-family: 'Chakra Petch', sans-serif;
+  margin-top: 0;
+  max-width: 722px;
+}
+
+.meetOurTeem_title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 128px;
+  padding-bottom: 34px;
+}
+
+.line_for_quesions_block {
+  height: 20px;
+  width: 100%;
+  background-color: #1C0C29;
+}
+
+.light_violetLine {
+  height: 20px;
+  max-width: 300px;
+  background: linear-gradient(225deg, transparent 15px, #2a123f 0);
+}
+
+.for_quesions_block {
+  background-color: #2a123f;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.for_quesions_block_text h2 {
+  text-shadow: 2px 4px 0px rgba(251, 37, 118, 0.5);
+  color: #F8F8F8;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  font-family: 'Chakra Petch', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.for_quesions_block_text h2 span {
+  color: #FB2576;
+}
+
+.for_quesions_block_text img {
+  margin: 24px 0;
+}
+
+.for_quesions_block_text p {
+  color: #C2C2C2;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+}
+
+.for_quesions_block_form_btn button {
+  border: none;
+}
+
+.for_quesions_block_padding {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.for_quesions_block_text,
+.for_quesions_block_form {
+  max-width: 630px;
+  width: 100%;
+}
+
+.for_quesions_block_form_fiels input,
+.for_quesions_block_form_fiels textarea {
+  border: 1px solid #8A5DB0;
+  box-shadow: inset 0px 0px 4px rgb(0 0 0 / 25%);
+  margin-bottom: 10px;
+}
+
+.for_quesions_block_form_fiels input,
+.for_quesions_block_form_fiels textarea {
+  background-color: transparent;
+
+  padding: 12px 16px;
+  width: 100%;
+  color: #F8F8F8;
+}
+
+.for_quesions_block_form_fiels input::placeholder,
+.for_quesions_block_form_fiels textarea::placeholder {
+  color: #98919E;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.for_quesions_block_form_btn {
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.for_quesions_block_form_btn button {
+  margin-right: -14px;
+}
+
+.for_quesions_block_form_btn button:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width:800px) {
+  .main__title {
+    text-align: center;
+  }
+
+  .contactUs_main_block_position {
+    padding-left: 0;
+  }
+}
+
+@media (max-width:768px) {
+
+  .contactUs_main_block_position {
+    padding-left: 0;
+  }
+
+  .contactUs_main_block_text h1 {
+    text-align: center;
+  }
+
+  .contactUs_main_block_text .btn_container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .meetOurTeem_title {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:500px) {
+
+  .meetOurTeem h2 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .contactUs_bg_slide_border_up img {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width:400px) {
+  .contactUs_bg_slide_border {
+    width: 260px !important;
+  }
+}
+
+@media (max-width:361px) {
+  .contactUs_main_block_position {
+    top: 250px;
+  }
+
+}
+
+@media (max-width:280px) {
+  .btn {
+    padding: 8px 25px;
+    width: 128px;
+  }
+
+  .contactUs_bg_slide_border_up img {
+    width: 100%;
+  }
+
+  .contactUs_bg_slide_border {
+    padding: 0;
+  }
+
+}

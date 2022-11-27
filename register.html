@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaCraft</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header_container">
+      <a href="/" class="header__logo">
+        <img src="images/logo.png" width="100" loading="lazy" alt="image">
+      </a>
+      <div class="header__full flex" id="headerCollapse">
+        <ul class="header__links">
+          <li class="header__link"><a href="affiliates.html">Affiliates</a></li>
+          <li class="header__link"><a href="advertisers.html">Advertisers</a></li>
+          <li class="header__link"><a href="blog.html">Blog</a></li>
+          <li class="header__link"><a href="about.html">About us</a></li>
+          <li class="header__link"><a href="contact_us.html">Contact us</a></li>
+          <div class="btn_container mob_regbtn">
+            <a href="register.html" class="btn"><span>Sign up</span></a>
+          </div>
+          <img src="images/elips.png" class="mob_nav_img" loading="lazy" alt="image">
+          <div class="mob_contact_header">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+            <p class="header_contact_mob">61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </ul>
+        <div class="hamb">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <div class="btn_container dec_regbtn">
+        <a href="register.html" class="btn"><span>Sign up</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main_register_block">
+      <form id="register_form" action="#" method="POST">
+        <h1>Register</h1>
+        <div class="step_block">
+          <div class="step">
+            <p>1 step</p>
+          </div>
+          <div class="step">
+            <p>2 step</p>
+          </div>
+          <div class="step">
+            <p>3 step</p>
+          </div>
+        </div>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <p><input type="email" placeholder="Email*" name="email"></p>
+          <p><input placeholder="Password*" name="password" type="password" id="password"></p>
+          <p><input placeholder="Confirm password*" name="password_confirm" type="password"></p>
+          <p><input placeholder="Country" name="country" type="text"></p>
+          <p><input placeholder="Adress" name="adress" type="text"></p>
+          <p>
+            <select id="im_type_select" name="im_type">
+              <option value="">IM Type*</option>
+              <option value="skype">Skype</option>
+              <option value="telegram">Telegram</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p><input placeholder="Contact info*" name="contact_info" type="text"></p>
+          <p><input placeholder="Contact name" name="contact_name" type="text"></p>
+          <p><input placeholder="Link (personal/company)" name="link" type="text"></p>
+        </div>
+        <div class="tab">
+          <p class="group_title">Name main verticals</p>
+          <fieldset id="cbgroup1">
+            <div>
+              <input class="inp-cbx" type="checkbox" name="main_verticals" />
+              <input class="inp-cbx" id="check_crypto" type="checkbox" name="main_verticals" value="crypto" />
+              <label class="cbx" for="check_crypto"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Crypto</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_ICO" type="checkbox" name="main_verticals" value="ICO" />
+              <label class="cbx" for="check_ICO"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>ICO</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_forex" type="checkbox" name="main_verticals" value="forex" />
+              <label class="cbx" for="check_forex"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Forex</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_coins" type="checkbox" name="main_verticals" value="coins" />
+              <label class="cbx" for="check_coins"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Coins</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_finance" type="checkbox" name="main_verticals" value="finance" />
+              <label class="cbx" for="check_finance"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Finance</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_mining_pools" type="checkbox" name="main_verticals"
+                value="mining_pools" />
+              <label class="cbx" for="check_mining_pools"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Mining/Pools</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_binar_option" type="checkbox" name="main_verticals"
+                value="binar_option" />
+              <label class="cbx" for="check_binar_option"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Binar Option</span></label>
+            </div>
+            <div class="other_order">
+              <input class="inp-cbx" id="check_other" type="checkbox" name="main_verticals" value="other" />
+              <label class="cbx" for="check_other"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>Other</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_PDL" type="checkbox" name="main_verticals" value="PDL" />
+              <label class="cbx" for="check_PDL"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check"></use>
+                  </svg></span><span>PDL</span></label>
+            </div>
+            <!--SVG Sprites-->
+            <svg class="inline-svg">
+              <symbol id="check" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </fieldset>
+          <p><input placeholder="Other verticals" name="other_verticals" type="text"></p>
+          <p><input placeholder="What CPA networks do you currently work with?" name="CPA_networks_work_with"
+              type="text"></p>
+          <p class="group_title paddingTop30">Name main verticals</p>
+          <fieldset id="cbgroup2">
+            <div>
+              <input class="inp-cbx" type="checkbox" name="traffic_types" />
+              <input class="inp-cbx" id="check_SEO_doorways" type="checkbox" name="traffic_types"
+                value="SEO_doorways" />
+              <label class="cbx" for="check_SEO_doorways"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>SEO/Doorways</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_email" type="checkbox" name="traffic_types" value="email" />
+              <label class="cbx" for="check_email"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>ICO</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_PPC" type="checkbox" name="traffic_types" value="PPC" />
+              <label class="cbx" for="check_PPC"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>PPC</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_popunder" type="checkbox" name="traffic_types" value="popunder" />
+              <label class="cbx" for="check_popunder"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Popunder</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_native_Ads" type="checkbox" name="traffic_types" value="native_Ads" />
+              <label class="cbx" for="check_native_Ads"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Native Ads</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_pushs" type="checkbox" name="traffic_types" value="push" />
+              <label class="cbx" for="check_pushs"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Push</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_ad_Networks" type="checkbox" name="traffic_types" value="ad_Networks" />
+              <label class="cbx" for="check_ad_Networks"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Ad Networks</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_notifications" type="checkbox" name="traffic_types"
+                value="notifications" />
+              <label class="cbx" for="check_notifications"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Notifications</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_social_media" type="checkbox" name="traffic_types"
+                value="social_media" />
+              <label class="cbx" for="check_social_media"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Social media</span></label>
+            </div>
+            <div class="other_order">
+              <input class="inp-cbx" id="check_other_types" type="checkbox" name="traffic_types" value="other" />
+              <label class="cbx" for="check_other_types"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check2"></use>
+                  </svg></span><span>Other</span></label>
+            </div>
+            <!--SVG Sprites-->
+            <svg class="inline-svg">
+              <symbol id="check2" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </fieldset>
+          <p><input placeholder="Other traffic types" name="traffic_types" type="text"></p>
+          <p class="group_title paddingTop30">Top Geo</p>
+          <fieldset id="cbgroup3">
+
+            <div>
+              <input class="inp-cbx" type="checkbox" name="top_geo" />
+              <input class="inp-cbx" id="check_TIER1" type="checkbox" name="top_geo" value="TIER1" />
+              <label class="cbx" for="check_TIER1"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>TIER1</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_asia_Pacific" type="checkbox" name="top_geo" value="asia_Pacific" />
+              <label class="cbx" for="check_asia_Pacific"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>Asia-Pacific</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_europe" type="checkbox" name="top_geo" value="europe" />
+              <label class="cbx" for="check_europe"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>Europe</span></label>
+
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_ru_speaking_countries" type="checkbox" name="top_geo"
+                value="ru_speaking_countries" />
+              <label class="cbx" for="check_ru_speaking_countries"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>Ru-speaking countries</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_LATAM" type="checkbox" name="top_geo" value="LATAM" />
+              <label class="cbx" for="check_LATAM"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>LATAM</span></label>
+            </div>
+            <div class="other_order">
+              <input class="inp-cbx" id="check_other_geo" type="checkbox" name="top_geo" value="other" />
+              <label class="cbx" for="check_other_geo"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>Other</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" id="check_GCC" type="checkbox" name="GCC" value="ad_Networks" />
+              <label class="cbx" for="check_GCC"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span>GCC</span></label>
+            </div>
+            <!--SVG Sprites-->
+            <svg class="inline-svg">
+              <symbol id="check3" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </fieldset>
+          <p><input placeholder="Other traffic types" name="geo_types" type="text"></p>
+        </div>
+        <div class="tab">
+          <p class="group_title">Name main verticals</p>
+          <p><input placeholder="Promo-code" name="promo_code" type="text"></p>
+          <p><input placeholder="How did you hear about us?" name="hear_about_us" type="text"></p>
+          <div class="boxes_agree" style="margin-top: 30px;">
+            <div>
+              <input class="inp-cbx" type="checkbox" name="agree_receive_news" />
+              <input class="inp-cbx" id="check_receive_news" type="checkbox" name="agree_receive_news"
+                value="agree_receive_news" checked />
+              <label class="cbx" for="check_receive_news"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check4"></use>
+                  </svg></span><span class="boxes_agree_text">I agree to receive news</span></label>
+            </div>
+            <div>
+              <input class="inp-cbx" type="checkbox" name="agree_with_terms" />
+              <input class="inp-cbx" id="check_agree_with_terms" type="checkbox" name="agree_with_terms"
+                value="agree_with_terms" checked />
+              <label class="cbx" for="check_agree_with_terms"><span>
+                  <svg width="10px" height="8px">
+                    <use xlink:href="#check3"></use>
+                  </svg></span><span class="boxes_agree_text">I agree with terms and conditions</span></label>
+            </div>
+            <!--SVG Sprites-->
+            <svg class="inline-svg">
+              <symbol id="check4" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
+        </div>
+
+        <div style="overflow:auto;">
+          <div class="steps_btns_block">
+            <button type="button" class="previous btn_previous">Previous stage</button>
+            <button type="button" class="next btn_full"><span>Continue</span></button>
+            <button type="button" class="submit btn_full">Continue</button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer maxW">
+      <div class="footer_row1">
+        <img src="images/logo.png" loading="lazy" alt="image">
+        <div class="footer_nav">
+          <div class="footer_nav_item">
+            <a href="#">Affiliates</a>
+            <a href="#">Advertisers</a>
+          </div>
+          <div class="footer_nav_item">
+            <a href="#">Contact us</a>
+            <a href="#">Blog</a>
+            <a href="#">About us</a>
+          </div>
+          <div class="footer_nav_item">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+          </div>
+          <div class="footer_nav_item">
+            <p>61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </div>
+        <div class="footer_nav_mob">
+          <div class="footer_nav_mob_items">
+            <div class="footer_nav_item">
+              <a href="#">Affiliates</a>
+              <a href="#">Contact u</a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#">Advertisers</a>
+              <a href="#">About us</a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#">Blog</a>
+            </div>
+          </div>
+
+          <div class="footer_nav_contact">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+          </div>
+          <div class="footer_nav_address">
+            <p>61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_row2">
+        <img src="images/footer_icon1.png" loading="lazy" alt="image">
+        <img src="images/footer_icon2.png" loading="lazy" alt="image">
+        <img src="images/footer_icon3.png" loading="lazy" alt="image">
+        <img src="images/footer_icon4.png" loading="lazy" alt="image">
+        <img src="images/footer_icon5.png" loading="lazy" alt="image">
+        <img src="images/footer_icon6.png" loading="lazy" alt="image">
+        <img src="images/footer_icon7.png" loading="lazy" alt="image">
+        <img src="images/footer_icon8.png" loading="lazy" alt="image">
+        <img src="images/footer_icon9.png" loading="lazy" alt="image">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/valid_registerform.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaCraft</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contactUs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <style>
+    .swiper-button-next {
+      background-image: url(images/arrow_right_oueBest.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+    }
+
+    .swiper-button-next::after {
+      display: none;
+    }
+
+    .swiper-button-prev {
+      background-image: url(images/arrow_left_oueBest.png);
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+    }
+
+    .swiper-button-prev::after {
+      display: none;
+    }
+
+    .swiper_contactUs_meet {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      height: 406px;
+    }
+
+    .contactUs_bg_slide_border {
+      background-size: cover;
+      min-height: 406px;
+      width: 100%;
+      position: relative;
+      background-color: #1C0C29;
+    }
+
+    .contactUs_bg_slide_border:hover {
+      cursor: pointer;
+    }
+
+    .swiper-pagination-bullet {
+      border-radius: inherit;
+      background: #744C5B;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #BA1B57;
+    }
+
+    .swiper-slide {
+      width: fit-content;
+    }
+
+    @media (max-width:1050px) {
+      .swiper_contactUs_meet {
+        width: 80%;
+      }
+    }
+
+    @media (max-width:820px) {
+      .contactUs_bg_slide_border {
+        width: 280px !important;
+      }
+    }
+
+    @media (max-width:768px) {
+      .contactUs_bg_slide_border {
+        min-height: 350px;
+        width: 100% !important;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+
+      .swiper_contactUs_meet {
+        width: 100%;
+      }
+
+      .contactUs_bg_slide_border {
+        min-height: 480px;
+      }
+
+      .for_quesions_block_padding {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width:500px) {
+      .swiper_contactUs_meet {
+        min-height: 450px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="header_container">
+      <a href="/" class="header__logo">
+        <img src="images/logo.png" width="100" loading="lazy" alt="image">
+      </a>
+      <div class="header__full flex" id="headerCollapse">
+        <ul class="header__links">
+          <li class="header__link"><a href="affiliates.html">Affiliates</a></li>
+          <li class="header__link"><a href="advertisers.html">Advertisers</a></li>
+          <li class="header__link"><a href="blog.html">Blog</a></li>
+          <li class="header__link"><a href="about.html">About us</a></li>
+          <li class="header__link"><a href="contact_us.html">Contact us</a></li>
+          <div class="btn_container mob_regbtn">
+            <a href="register.html" class="btn"><span>Sign up</span></a>
+          </div>
+          <img src="images/elips.png" class="mob_nav_img" loading="lazy" alt="image">
+          <div class="mob_contact_header">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+            <p class="header_contact_mob">61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </ul>
+        <div class="hamb">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+      <div class="btn_container dec_regbtn">
+        <a href="register.html" class="btn"><span>Sign up</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="contact_main_block">
+      <div class="bg_contact_main_block"></div>
+      <div class="contactUs_main_block_position ">
+        <div class="contactUs_main_block_text maxW">
+          <h1 class="main__title">Contact us</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="meetOurTeem maxW">
+      <div class="meetOurTeem_title">
+        <h2>MEET OUR TEAM ON EVENTS AND CONFERENCE</h2>
+        <img class="meetOurTeem_elips1" src="images/lines.png" alt="image" loading="lazy">
+      </div>
+      <div style="position:relative; overflow:hidden">
+        <div class="swiper_contactUs_meet">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="contactUs_bg_slide_border">
+                <div class="contactUs_bg_slide_border_up">
+                  <div class="contactUs_slider_img">
+                    <img src="images/contactUs_img1.png" alt="image" loading="lazy">
+                  </div>
+
+                  <p class="contactUs_meet_title">Title of the conference</p>
+                  <p class="contactUs_meet_date">01.02.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="contactUs_bg_slide_border">
+                <div class="contactUs_bg_slide_border_up">
+                  <div class="contactUs_slider_img">
+                    <img src="images/contactUs_img2.png" alt="image" loading="lazy">
+                  </div>
+                  <p class="contactUs_meet_title">Title of the conference</p>
+                  <p class="contactUs_meet_date">01.02.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="contactUs_bg_slide_border">
+                <div class="contactUs_bg_slide_border_up">
+                  <div class="contactUs_slider_img">
+                    <img src="images/contactUs_img3.png" alt="image" loading="lazy">
+                  </div>
+                  <p class="contactUs_meet_title">Title of the conference</p>
+                  <p class="contactUs_meet_date">01.02.2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="line_for_quesions_block">
+      <div class="light_violetLine"></div>
+    </div>
+    <div class="for_quesions_block">
+      <div class="maxW">
+        <div class="for_quesions_block_padding">
+          <div class="for_quesions_block_text">
+            <h2>For any questions or inquires,our 24/7 online support service is always <span>available.</span></h2>
+            <img src="images/lines.png" alt="image" loading="lazy">
+            <p>For any questions or inquires, our 24/7 online support service is always available.</p>
+          </div>
+          <div class="for_quesions_block_form">
+            <form action="#" method="post">
+              <div class="for_quesions_block_form_fiels">
+                <input type="text" name="full_name" placeholder="Your full name" required>
+              </div>
+              <div class="for_quesions_block_form_fiels">
+                <input type="email" name="email" placeholder="Your email" required>
+              </div>
+              <div class="for_quesions_block_form_fiels">
+                <input type="text" name="topic" placeholder="Enter the topic" required>
+              </div>
+              <div class="for_quesions_block_form_fiels">
+                <textarea placeholder="Type your message" name="message" required rows="8"></textarea>
+              </div>
+              <div class="btn_container for_quesions_block_form_btn">
+                <button type="submit" class="btn_full"><span>Make request</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div class="footer maxW">
+      <div class="footer_row1">
+        <img src="images/logo.png" loading="lazy" alt="image">
+        <div class="footer_nav">
+          <div class="footer_nav_item">
+            <a href="#">Affiliates</a>
+            <a href="#">Advertisers</a>
+          </div>
+          <div class="footer_nav_item">
+            <a href="#">Contact us</a>
+            <a href="#">Blog</a>
+            <a href="#">About us</a>
+          </div>
+          <div class="footer_nav_item">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+          </div>
+          <div class="footer_nav_item">
+            <p>61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </div>
+        <div class="footer_nav_mob">
+          <div class="footer_nav_mob_items">
+            <div class="footer_nav_item">
+              <a href="#">Affiliates</a>
+              <a href="#">Contact u</a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#">Advertisers</a>
+              <a href="#">About us</a>
+            </div>
+            <div class="footer_nav_item">
+              <a href="#">Blog</a>
+            </div>
+          </div>
+
+          <div class="footer_nav_contact">
+            <p>your@mail.com</p>
+            <p>+38 044 33 444 33</p>
+          </div>
+          <div class="footer_nav_address">
+            <p>61 Bridge Street, Kington. Herefordshire HR5 3DJ</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_row2">
+        <img src="images/footer_icon1.png" loading="lazy" alt="image">
+        <img src="images/footer_icon2.png" loading="lazy" alt="image">
+        <img src="images/footer_icon3.png" loading="lazy" alt="image">
+        <img src="images/footer_icon4.png" loading="lazy" alt="image">
+        <img src="images/footer_icon5.png" loading="lazy" alt="image">
+        <img src="images/footer_icon6.png" loading="lazy" alt="image">
+        <img src="images/footer_icon7.png" loading="lazy" alt="image">
+        <img src="images/footer_icon8.png" loading="lazy" alt="image">
+        <img src="images/footer_icon9.png" loading="lazy" alt="image">
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper_contactUs_meet", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      centeredSlides: true,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          centeredSlides: false,
+        },
+        1050: {
+          slidesPerView: 3,
+          spaceBetween: 100,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

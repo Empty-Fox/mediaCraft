@@ -1,0 +1,155 @@
+.bg_about_main_block {
+  background-image: url(../images/about_main_img.jpg);
+  min-height: 676px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_main_block_position {
+  position: absolute;
+  top: 288px;
+  width: 100%;
+  left: 0;
+  padding-left: 10%;
+}
+
+.about_main_block_text .btn_container {
+  max-width: 375px;
+  margin-left: -22px;
+  margin-top: 40px;
+}
+
+.about_second_block_curner {
+  position: relative;
+  overflow: hidden;
+}
+
+.about_second_block_text>img {
+  margin-bottom: 50px;
+}
+
+.about_second_block_text {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.about_second_block_text_left p {
+  color: #F8F8F8;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 100%;
+  max-width: 409px;
+}
+
+.about_second_block_text_right img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.about_elips1 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  opacity: .5;
+}
+
+.about_second_block h2 {
+  text-shadow: 2px 4px 0px rgba(251, 37, 118, 0.5);
+  color: #F8F8F8;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.about_second_block_text_left .btn_container {
+  margin-top: 40px;
+}
+
+.about_second_block_text_right p {
+  width: 100%;
+  color: #F8F8F8;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.about_second_block {
+  padding: 100px 5%;
+}
+
+@media (max-width:900px) {
+  .about_second_block_text {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .about_second_block_text_left>img {
+    margin-left: 0;
+    display: block;
+  }
+
+  .about_main_block_position {
+    padding-left: 0;
+  }
+
+  .about_second_block_text_left p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width:768px) {
+  .bg_about_main_block {
+    background-position: 60%;
+  }
+
+
+  .about_second_block_text_left>img {
+    margin-bottom: 64px;
+  }
+
+  .about_main_block_text h1 {
+    text-align: center;
+  }
+
+  .about_main_block_text .btn_container {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .btn_full_reg_long {
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width:361px) {
+  .about_main_block_position {
+    top: 250px;
+  }
+
+  .about_second_block_text_right p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width:280px) {
+  .btn {
+    padding: 8px 25px;
+    width: 128px;
+  }
+}
