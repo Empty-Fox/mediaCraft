@@ -272,13 +272,18 @@
   }
 
 }
-
+@media (max-width:375px) {
+  .bg_aff_main_block {
+    min-height: 480px;
+  }
+  .aff_main_block_position {
+    top: 190px;
+  }
+}
 @media (max-width:361px) {
 
 
-  .aff_main_block_position {
-    top: 250px;
-  }
+
 
   .aff_offer_block {
     padding: 12px 20px;

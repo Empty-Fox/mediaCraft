@@ -292,12 +292,13 @@
     width: 260px !important;
   }
 }
-
-@media (max-width:361px) {
-  .contactUs_main_block_position {
-    top: 250px;
+@media (max-width:375px) {
+  .bg_contact_main_block {
+    min-height: 480px;
   }
-
+  .contactUs_main_block_position {
+    top: 190px;
+  }
 }
 
 @media (max-width:280px) {

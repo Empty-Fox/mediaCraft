@@ -134,12 +134,16 @@
   }
 
 }
-
+@media (max-width:375px) {
+  .bg_about_main_block {
+    min-height: 480px;
+  }
+  .about_main_block_position {
+    top: 190px;
+}
+}
 
 @media (max-width:361px) {
-  .about_main_block_position {
-    top: 250px;
-  }
 
   .about_second_block_text_right p {
     font-size: 14px;
