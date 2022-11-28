@@ -1,20 +1,37 @@
 $(document).ready(function () {
-  $.validator.addMethod('date', function (value, element, param) {
-    return (value != 0) && (value <= 31) && (value == parseInt(value, 10));
-  }, 'Please enter a valid date!');
-  $.validator.addMethod('month', function (value, element, param) {
-    return (value != 0) && (value <= 12) && (value == parseInt(value, 10));
-  }, 'Please enter a valid month!');
-  $.validator.addMethod('year', function (value, element, param) {
-    return (value != 0) && (value >= 1900) && (value == parseInt(value, 10));
-  }, 'Please enter a valid year not less than 1900!');
-  $.validator.addMethod('username', function (value, element, param) {
+
+  $.validator.addMethod('letter_digit', function (value, element, param) {
     var nameRegex = /^[a-zA-Z0-9]+$/;
     return value.match(nameRegex);
   }, 'Only a-z, A-Z, 0-9 characters are allowed');
 
+  $.validator.addMethod("lettersonly", function (value, element) {
+    return this.optional(element) || /^[a-z]+$/i.test(value);
+  }, "Letters only please");
+
+  $.validator.addMethod("strong_password", function (value, element) {
+    let password = value;
+    if (!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(.{8,20}$)/.test(password))) {
+      return false;
+    }
+    return true;
+  }, function (value, element) {
+    let password = $(element).val();
+    if (!(/^(.{8,20}$)/.test(password))) {
+      return 'Password must be between 8 to 20 characters long.';
+    }
+    else if (!(/^(?=.*[A-Z])/.test(password))) {
+      return 'Password must contain at least one uppercase.';
+    }
+    else if (!(/^(?=.*[a-z])/.test(password))) {
+      return 'Password must contain at least one lowercase.';
+    }
+    else if (!(/^(?=.*[0-9])/.test(password))) {
+      return 'Password must contain at least one digit.';
+    }
+    return false;
+  });
   var val = {
-    // Specify validation rules
     rules: {
       email: {
         required: true,
@@ -22,18 +39,22 @@ $(document).ready(function () {
       },
       password: {
         required: true,
-        minlength: 8,
-        maxlength: 16,
+        strong_password: true
       },
       password_confirm: {
         required: true,
         equalTo: "#password"
       },
+      country: {
+        required: false,
+        lettersonly: true
+      },
       im_type: {
         required: true
       },
       contact_info: {
-        required: true
+        required: true,
+        minlength: 5
       },
       main_verticals: {
         required: true,
@@ -54,7 +75,6 @@ $(document).ready(function () {
         minlength: 1
       }
     },
-    // Specify validation error messages
     messages: {
       email: {
         required: "Email is required",
@@ -65,12 +85,11 @@ $(document).ready(function () {
         minlength: "Password should be minimum 8 characters",
         maxlength: "Password should be maximum 16 characters",
       }
-  
+
     }
   }
   $("#register_form").multiStepForm(
     {
-      // defaultStep:0,
       beforeSubmit: function (form, submit) {
         console.log("called before submiting the form");
         console.log(form);
@@ -93,19 +112,15 @@ $(document).ready(function () {
       });
     });
     form.navigateTo = function (i) {/*index*/
-      /*Mark the current section with the class 'current'*/
       tabs.removeClass('current').eq(i).addClass('current');
-      // Show only the navigation buttons that make sense for the current section:
       form.find('.previous').toggle(i > 0);
       atTheEnd = i >= tabs.length - 1;
       form.find('.next').toggle(!atTheEnd);
-      // console.log('atTheEnd='+atTheEnd);
       form.find('.submit').toggle(atTheEnd);
       fixStepIndicator(curIndex());
       return form;
     }
     function curIndex() {
-      /*Return the current index by looking at which section has the class 'current'*/
       return tabs.index(tabs.filter('.current'));
     }
     function fixStepIndicator(n) {
@@ -113,12 +128,10 @@ $(document).ready(function () {
         i == n ? $(e).addClass('active') : $(e).removeClass('active');
       });
     }
-    /* Previous button is easy, just go back */
     form.find('.previous').click(function () {
       form.navigateTo(curIndex() - 1);
     });
 
-    /* Next button goes forward iff current block validates */
     form.find('.next').click(function () {
       if ('validations' in args && typeof args.validations === 'object' && !$.isArray(args.validations)) {
         if (!('noValidate' in args) || (typeof args.noValidate === 'boolean' && !args.noValidate)) {
@@ -135,18 +148,13 @@ $(document).ready(function () {
     form.find('.submit').on('click', function (e) {
       if (typeof args.beforeSubmit !== 'undefined' && typeof args.beforeSubmit !== 'function')
         args.beforeSubmit(form, this);
-      /*check if args.submit is set false if not then form.submit is not gonna run, if not set then will run by default*/
-      if (typeof args.submit === 'undefined' || (typeof args.submit === 'boolean' && args.submit)) {    
-        if(form.valid)  {
-          e.preventDefault();
-          window.open('thank.html');
+      if (typeof args.submit === 'undefined' || (typeof args.submit === 'boolean' && args.submit)) {
+        if (form.valid) {
           form.submit();
-          
         }
       }
       return form;
     });
-    /*By default navigate to the tab 0, if it is being set using defaultStep property*/
     typeof args.defaultStep === 'number' ? form.navigateTo(args.defaultStep) : null;
     form.noValidate = function () {
 
