@@ -218,19 +218,31 @@
     width: 260px !important;
   }
 }
+
 @media (max-width:375px) {
   .bg_adv_main_block {
     min-height: 480px;
   }
+
   .adv_main_block_position {
     top: 190px;
+  }
+
+  .adv_second_block_text.maxW {
+    width: 100%;
+  }
+
+  .adv_second_block_text_left>img {
+    margin-bottom: 34px;
+  }
+
 }
-}
+
 @media (max-width:361px) {
 
   .adv_offer_block {
-    padding: 12px 20px;
     gap: 6px;
+    width: 90%;
   }
 
   .adv_second_block_text_right p {

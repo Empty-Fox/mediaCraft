@@ -185,6 +185,10 @@
 }
 
 @media (max-width:375px) {
+  .block_article_big {
+    padding: 0;
+  }
+
   .article_mainBlog_text h1 {
     font-size: 22px;
     line-height: 28px;

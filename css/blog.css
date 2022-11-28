@@ -196,3 +196,20 @@
   }
 
 }
+
+@media (max-width:375px) {
+
+  .blog_main__title__container,
+  .block_blog {
+    padding: 64px 0;
+  }
+
+  .blog_main__title__container {
+    padding: 0 0 44px 0;
+  }
+
+  .blog_mainBlog,
+  .block_blog {
+    padding: 0;
+  }
+}
