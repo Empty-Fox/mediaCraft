@@ -503,6 +503,7 @@ img {
   border: 2px solid #FB2576;
   box-sizing: border-box;
   cursor: pointer;
+  box-shadow: 0px 0px 6px #fb2576;
 }
 
 .services_block_item:hover:before {
@@ -1084,7 +1085,7 @@ li.header__link, .header__link:first-child {
 
   .partners_block .flex {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
   }
 
   .main__video {
@@ -1142,6 +1143,42 @@ li.header__link, .header__link:first-child {
 
 
 @media (max-width:375px) {
+  .services_block_item:before {
+    width: 0;
+    height: 0;
+  }
+  .services_block_item img {
+    display: none;
+  }
+  .why_choose_us_block_main {
+    padding: 24px 0;
+}
+  .why_choose_us_block_main {
+    margin-top: 40px;
+  }
+  .why_choose_us_block_title>img {
+    margin-right: auto;
+    margin-left: 0;
+}
+  h2.title {
+    font-size: 38px;
+    line-height: 44px;
+}
+  .why_choose_us_block:after {
+    width: 0;
+    height: 0;
+  }
+  .why_choose_us_block_title {
+    padding: 0;
+    max-width: 335px;
+  }
+  .why_choose_us_block.maxW {
+width: 100%;
+  }
+
+  .why_choose_us_block, .why_choose_us_block:after {
+border: none;
+  }
   .dec_regbtn {
     display: none;
   }
