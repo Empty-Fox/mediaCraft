@@ -34,46 +34,92 @@ $(document).ready(function () {
   var val = {
     rules: {
       email: {
-        required: false,
+        required: true,
         email: true
       },
+      first_name:{
+        required: true,
+        lettersonly:true,
+        minlength: 3,
+        maxlength:20
+      },
+      last_name:{
+        required: true,
+        lettersonly:true,
+        minlength: 3,
+        maxlength:20
+      },
       password: {
-        required: false,
-        strong_password: false
+        required: true,
+        strong_password: true
       },
       password_confirm: {
-        required: false,
+        required: true,
         equalTo: "#password"
       },
       country: {
-        required: false,
-        lettersonly: false
+        required: true,
+        lettersonly: true,
+        minlength: 3,
+        maxlength:12
+      },
+      adress: {
+        required: true,
+        minlength: 5,
+        maxlength:20
       },
       im_type: {
-        required: false
+        required: true
       },
       contact_info: {
-        required: false,
-        minlength: 5
+        required: true,
+        minlength: 5,
+        maxlength:20
+      },
+      contact_name:{
+        required: true,
+        minlength: 3,
+        maxlength:20
+      },
+      link:{ 
+        required: true,
+        minlength: 3,
+        maxlength:20
       },
       main_verticals: {
-        required: false,
+        required: true,
         minlength: 1
+      },
+      CPA_networks_work_with:{
+        required: true,
+        minlength: 3,
+        maxlength:20
       },
       traffic_types: {
-        required: false,
+        required: true,
         minlength: 1
-      },
-      agree_receive_news: {
-        required: false,
-      },
-      agree_with_terms: {
-        required: false,
       },
       top_geo: {
-        required: false,
+        required: true,
         minlength: 1
+      },
+      promo_code:{ 
+        required: true,
+        minlength: 3,
+        maxlength:20
+      },
+      hear_about_us:{
+        required: true,
+        minlength: 3,
+        maxlength:20
+      },
+      agree_receive_news: {
+        required: true,
+      },
+      agree_with_terms: {
+        required: true,
       }
+   
     },
     messages: {
       email: {
