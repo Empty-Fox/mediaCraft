@@ -148,6 +148,45 @@ label.error {
   height: auto;
   width: 214px;
   color: #F8F8F8;
+  padding: 11px 20px 11px 40px;
+}
+
+
+
+.arrow_hover_previous {
+  position: relative;
+  -webkit-transition: padding-left .16s ease-out;
+  transition: padding-left .16s ease-out;
+}
+.arrow_hover_previous:after, .arrow_hover_previous:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+.arrow_hover_previous:before {
+  left: 24px;
+  width: 6px;
+  margin-top: -3px;
+  margin-left: 5px;
+  height: 6px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.arrow_hover_previous:hover:after {
+  width: 15px;
+}
+
+.arrow_hover_previous:hover:before {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.arrow_hover_previous:after {
+  left: 28px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: .16s ease-out;
+  transition: .16s ease-out;
 }
 
 fieldset #list-error {

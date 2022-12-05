@@ -34,44 +34,44 @@ $(document).ready(function () {
   var val = {
     rules: {
       email: {
-        required: true,
+        required: false,
         email: true
       },
       password: {
-        required: true,
-        strong_password: true
+        required: false,
+        strong_password: false
       },
       password_confirm: {
-        required: true,
+        required: false,
         equalTo: "#password"
       },
       country: {
         required: false,
-        lettersonly: true
+        lettersonly: false
       },
       im_type: {
-        required: true
+        required: false
       },
       contact_info: {
-        required: true,
+        required: false,
         minlength: 5
       },
       main_verticals: {
-        required: true,
+        required: false,
         minlength: 1
       },
       traffic_types: {
-        required: true,
+        required: false,
         minlength: 1
       },
       agree_receive_news: {
-        required: true,
+        required: false,
       },
       agree_with_terms: {
-        required: true,
+        required: false,
       },
       top_geo: {
-        required: true,
+        required: false,
         minlength: 1
       }
     },

@@ -35,15 +35,52 @@
   width: 190px;
 }
 
-.btn_readmore:hover {
+.btn_read_ourBlog:hover {
 
   background: url(../images/btn_empty.png) no-repeat;
   background-size: contain;
   background-position: center;
   box-sizing: border-box;
   width: 190px;
-  padding: 12px 24px;
+  padding: 12px 34px 12px 12px ;
 }
+
+.arrow_hover_readmore {
+  position: relative;
+  -webkit-transition: padding-right .16s ease-out;
+  transition: padding-right .16s ease-out;
+}
+.arrow_hover_readmore:after, .arrow_hover_readmore:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+.arrow_hover_readmore:before {
+  right: 24px;
+  width: 6px;
+  margin-top: -3px;
+  margin-left: -5px;
+  height: 6px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrow_hover_readmore:hover:after {
+  width: 15px;
+}
+
+.arrow_hover_readmore:hover:before {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.arrow_hover_readmore:after {
+  right: 25px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: .16s ease-out;
+  transition: .16s ease-out;
+}
+
 
 @media (max-width:450px) {
   .main_thank_block {

@@ -181,6 +181,7 @@
   font-size: 18px;
   line-height: 28px;
   margin-top: 0;
+  max-width: 368px;
 }
 
 .for_quesions_block_form_btn button {
