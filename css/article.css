@@ -52,11 +52,13 @@
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
+  gap: 20px;
 }
 
 .block_article_big_left {
   max-width: 630px;
   width: 100%;
+  margin-bottom: 96px;
 }
 
 .block_article_big_left p,
@@ -98,6 +100,14 @@
   font-size: 14px;
   line-height: 24px;
   padding: 16px;
+}
+.block_article_big_right ol li a {
+  color: #F8F8F8;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .block_article_big_right ol {
@@ -167,6 +177,7 @@
   .block_article_big {
     flex-direction: column-reverse;
     padding-top: 40px;
+    gap: 0;
   }
 
   .block_article_big_right {
@@ -181,6 +192,7 @@
 
   .block_article_big_left {
     max-width: 100%;
+    margin-bottom: 0;
   }
 }
 

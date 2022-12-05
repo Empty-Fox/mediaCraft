@@ -81,7 +81,7 @@
           (performs tasks), or produces products for another company. Outsourcing is a choice that companies make in
           order
           to save money. But outsourcing also helps companies access external expertise and speed up time to market.</p>
-        <h4>Types of IT outsourcing services and statistics</h4>
+        <h4 id="typesOf_it">Types of IT outsourcing services and statistics</h4>
         <p>
           In the field of information technology, outsourcing is common. The main types of IT outsourcing include:</p>
         <ul>
@@ -107,11 +107,11 @@
       <div class="block_article_big_right">
         <h4>Content</h4>
         <ol>
-          <li>Types of IT outsourcing services and statistics</li>
-          <li>Advantages and disadvantages of outsourcing</li>
-          <li>What are the challenges of outsourcing?</li>
-          <li>Three types of outsourcing models</li>
-          <li>Dedicated team</li>
+          <li><a href="#typesOf_it" class="anchor">Types of IT outsourcing services and statistics</a></li>
+          <li><a href="#typesOf_it" class="anchor">Advantages and disadvantages of outsourcing</a></li>
+          <li><a href="#typesOf_it" class="anchor">What are the challenges of outsourcing?</a></li>
+          <li><a href="#typesOf_it" class="anchor">Three types of outsourcing models</a></li>
+          <li><a href="#typesOf_it" class="anchor">Dedicated team</a></li>
         </ol>
       </div>
     </div>
@@ -181,6 +181,21 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
+  <script>
+    //////scroll при якоре
+    $(document).ready(function () {
+      $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+        e.preventDefault();
+        var target = this.hash,
+          $target = $(target);
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 80
+        }, 900, 'swing', function () {
+          window.location.hash = target;
+        });
+      });
+    });
+  </script>
 
 </body>
 
